@@ -11,9 +11,6 @@ router = APIRouter(
     tags=['Posts']
 )
 
-@router.get("/test")
-def test():
-    return {"message": "hellow from olympus"}
 
     
 @router.get("/", response_model=List[schemas.PostOut])
